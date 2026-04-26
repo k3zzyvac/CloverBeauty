@@ -1,0 +1,97 @@
+:root {
+  --bg-creamy: #f5f0eb;
+  --accent-rose: #b76e79;
+  --accent-bronze: #4a3728;
+  --text-main: #2d241e;
+  --text-muted: #6e5f56;
+  --white: #ffffff;
+  --glass: rgba(255, 255, 255, 0.7);
+  --shadow-soft: 0 10px 30px rgba(74, 55, 40, 0.08);
+  --shadow-premium: 0 20px 40px rgba(74, 55, 40, 0.12);
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-creamy);
+  color: var(--text-main);
+  font-family: var(--font-montserrat), sans-serif;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, .serif {
+  font-family: var(--font-playfair), serif;
+  font-weight: 700;
+  color: var(--accent-bronze);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-family: inherit;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Section Spacing */
+section {
+  padding: 100px 0;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 60px 0;
+  }
+}
+
+/* Premium Frame Style */
+.premium-frame {
+  background: var(--white);
+  padding: 12px;
+  box-shadow: var(--shadow-soft);
+  border-radius: var(--radius-sm);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.premium-frame:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-premium);
+}
+
+/* Animation Utilities */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Geliştirme ekranındaki can sıkıcı sol alt panel ikonunu gizle */
+nextjs-portal, 
+[data-nextjs-toast] {
+  display: none !important;
+}
