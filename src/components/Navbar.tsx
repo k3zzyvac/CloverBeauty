@@ -83,33 +83,36 @@ const Navbar = () => {
               {link.name}
             </Link>
           ))}
-          <a
-            href="tel:05321561444"
-            style={{
-              backgroundColor: "var(--accent-bronze)",
-              color: "var(--white)",
-              padding: "12px 24px",
-              borderRadius: "50px",
-              fontSize: "14px",
-              fontWeight: "600",
-              display: "flex",
-              alignItems: "center",
-              gap: "8px",
-            }}
-          >
-            <Phone size={16} />
-            0532 156 1444
-          </a>
-        </div>
-
-        {/* Mobile Toggle */}
-        <button
-          className="mobile-only"
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          style={{ color: "var(--accent-bronze)" }}
+        <a
+          href="tel:05321561444"
+          aria-label="Bizi telefonla arayın"
+          style={{
+            backgroundColor: "var(--accent-bronze)",
+            color: "var(--white)",
+            padding: "12px 24px",
+            borderRadius: "50px",
+            fontSize: "14px",
+            fontWeight: "600",
+            display: "flex",
+            alignItems: "center",
+            gap: "8px",
+          }}
         >
-          {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
-        </button>
+          <Phone size={16} />
+          0532 156 1444
+        </a>
+      </div>
+
+      {/* Mobile Toggle */}
+      <button
+        className="mobile-only"
+        onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+        style={{ color: "var(--accent-bronze)" }}
+        aria-label={isMobileMenuOpen ? "Menüyü kapat" : "Menüyü aç"}
+        aria-expanded={isMobileMenuOpen}
+      >
+        {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
+      </button>
       </div>
 
       {/* Mobile Menu */}

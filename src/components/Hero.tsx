@@ -70,6 +70,7 @@ const Hero = () => {
               <a
                 href="#hizmetler"
                 className="btn-primary"
+                aria-label="Hizmetlerimizi inceleyin"
               >
                 Hizmetlerimizi Keşfedin
               </a>
@@ -77,6 +78,7 @@ const Hero = () => {
                 href="https://wa.me/905321561444"
                 target="_blank"
                 className="btn-outline"
+                aria-label="WhatsApp üzerinden bilgi alın"
               >
                 WhatsApp Bilgi
               </a>
@@ -125,10 +127,11 @@ const Hero = () => {
                 src="/images/Mekan1.webp"
                 alt="Clover Beauty Malatya - Lüks Güzellik Merkezi"
                 fill
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                sizes="(max-width: 768px) 100vw, 50vw"
                 style={{ objectFit: "cover" }}
                 priority
-                loading="eager"
+                placeholder="blur"
+                blurDataURL="data:image/webp;base64,UklGRlAAAABXRUJQVlA4WAoAAAAQAAAABwAABwAAQUxQSAIAAAAAAFZQOCAYAAAAMAEAnQEqCAAIAAAAbCQAALiS/v/6v3YAAAA="
               />
             </div>
 
@@ -147,6 +150,8 @@ const Hero = () => {
                 fill
                 sizes="180px"
                 style={{ objectFit: "cover", borderRadius: "var(--radius-md)" }}
+                placeholder="blur"
+                blurDataURL="data:image/webp;base64,UklGRlAAAABXRUJQVlA4WAoAAAAQAAAABwAABwAAQUxQSAIAAAAAAFZQOCAYAAAAMAEAnQEqCAAIAAAAbCQAALiS/v/6v3YAAAA="
               />
             </div>
           </div>

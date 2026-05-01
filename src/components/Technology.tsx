@@ -20,7 +20,7 @@ const TechSection = () => {
             <div style={{ display: "flex", flexDirection: "column", gap: "25px" }}>
               <div style={{ display: "flex", gap: "20px" }}>
                 <div style={{ width: "50px", height: "50px", borderRadius: "12px", backgroundColor: "rgba(183, 110, 121, 0.1)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
-                  <ShieldCheck className="icon-rose" />
+                  <ShieldCheck className="icon-rose" aria-hidden="true" />
                 </div>
                 <div>
                   <h4 style={{ fontSize: "18px", marginBottom: "5px" }}>FDA Onaylı Sistemler</h4>
@@ -29,7 +29,7 @@ const TechSection = () => {
               </div>
               <div style={{ display: "flex", gap: "20px" }}>
                 <div style={{ width: "50px", height: "50px", borderRadius: "12px", backgroundColor: "rgba(183, 110, 121, 0.1)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
-                  <Zap className="icon-rose" />
+                  <Zap className="icon-rose" aria-hidden="true" />
                 </div>
                 <div>
                   <h4 style={{ fontSize: "18px", marginBottom: "5px" }}>Maksimum Etki, Minimum Acı</h4>
@@ -38,7 +38,7 @@ const TechSection = () => {
               </div>
               <div style={{ display: "flex", gap: "20px" }}>
                 <div style={{ width: "50px", height: "50px", borderRadius: "12px", backgroundColor: "rgba(183, 110, 121, 0.1)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
-                  <Award className="icon-rose" />
+                  <Award className="icon-rose" aria-hidden="true" />
                 </div>
                 <div>
                   <h4 style={{ fontSize: "18px", marginBottom: "5px" }}>Uzman Uygulayıcılar</h4>
@@ -51,12 +51,14 @@ const TechSection = () => {
           <div className="tech-image-container">
             <div className="tech-bg-circle" />
             <div className="premium-frame">
-              <Image
+                <Image
                 src="/images/Teknoloji.webp"
                 alt="Clover Beauty Malatya - Premium Teknoloji"
                 fill
-                sizes="(max-width: 992px) 100vw, 50vw"
+                sizes="(max-width: 576px) 100vw, (max-width: 992px) 550px, 50vw"
                 style={{ objectFit: "cover" }}
+                placeholder="blur"
+                blurDataURL="data:image/webp;base64,UklGRlAAAABXRUJQVlA4WAoAAAAQAAAABwAABwAAQUxQSAIAAAAAAFZQOCAYAAAAMAEAnQEqCAAIAAAAbCQAALiS/v/6v3YAAAA="
               />
             </div>
             {/* Trust Badges */}

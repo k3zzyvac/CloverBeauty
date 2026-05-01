@@ -50,6 +50,8 @@ const BeforeAfterSlider = () => {
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     style={{ objectFit: "cover" }}
                     priority={index === 0}
+                    placeholder="blur"
+                    blurDataURL="data:image/webp;base64,UklGRlAAAABXRUJQVlA4WAoAAAAQAAAABwAABwAAQUxQSAIAAAAAAFZQOCAYAAAAMAEAnQEqCAAIAAAAbCQAALiS/v/6v3YAAAA="
                   />
                 </div>
                 <div style={{ padding: "20px", textAlign: "center" }}>

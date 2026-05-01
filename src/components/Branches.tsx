@@ -52,6 +52,8 @@ const Branches = () => {
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
                   style={{ objectFit: "cover" }}
+                  placeholder="blur"
+                  blurDataURL="data:image/webp;base64,UklGRlAAAABXRUJQVlA4WAoAAAAQAAAABwAABwAAQUxQSAIAAAAAAFZQOCAYAAAAMAEAnQEqCAAIAAAAbCQAALiS/v/6v3YAAAA="
                 />
               </div>
               <div style={{ padding: "40px", display: "flex", flexDirection: "column", flexGrow: 1, alignItems: "center", textAlign: "center" }}>

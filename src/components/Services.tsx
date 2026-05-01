@@ -64,6 +64,8 @@ const Services = () => {
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
                   style={{ objectFit: "cover" }}
+                  placeholder="blur"
+                  blurDataURL="data:image/webp;base64,UklGRlAAAABXRUJQVlA4WAoAAAAQAAAABwAABwAAQUxQSAIAAAAAAFZQOCAYAAAAMAEAnQEqCAAIAAAAbCQAALiS/v/6v3YAAAA="
                 />
               </div>
               <div style={{ padding: "30px", display: "flex", flexDirection: "column", flexGrow: 1 }}>

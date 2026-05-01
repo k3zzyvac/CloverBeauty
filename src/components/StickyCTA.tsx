@@ -5,11 +5,11 @@ import { Phone, MessageCircle } from "lucide-react";
 const StickyCTA = () => {
   return (
     <div className="mobile-cta-bar">
-      <a href="tel:05321561444" className="cta-button call">
+      <a href="tel:05321561444" className="cta-button call" aria-label="Bizi hemen arayın">
         <Phone size={20} />
         <span>Hemen Ara</span>
       </a>
-      <a href="https://wa.me/905321561444" target="_blank" className="cta-button whatsapp">
+      <a href="https://wa.me/905321561444" target="_blank" className="cta-button whatsapp" aria-label="WhatsApp üzerinden bilgi alın">
         <MessageCircle size={20} />
         <span>WhatsApp Bilgi</span>
       </a>

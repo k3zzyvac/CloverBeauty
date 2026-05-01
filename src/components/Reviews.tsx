@@ -32,7 +32,7 @@ const Reviews = () => {
             <div key={index} className="premium-frame" style={{ padding: "40px", backgroundColor: "white" }}>
               <div style={{ display: "flex", gap: "2px", marginBottom: "20px" }}>
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} size={16} fill="var(--accent-rose)" color="var(--accent-rose)" />
+                  <Star key={i} size={16} fill="var(--accent-rose)" color="var(--accent-rose)" aria-hidden="true" />
                 ))}
               </div>
               <p style={{ color: "var(--text-main)", fontSize: "15px", fontStyle: "italic", marginBottom: "25px", lineHeight: "1.7" }}>

@@ -34,8 +34,8 @@ const Footer = () => {
               premium bir güzellik deneyimi sunuyoruz.
             </p>
             <div style={{ display: "flex", gap: "15px" }}>
-              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" style={{ color: "white" }}><InstagramIcon size={20} /></a>
-              <a href="https://wa.me/905321561444" style={{ color: "white" }}><MessageCircle size={20} /></a>
+              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" style={{ color: "white" }} aria-label="Instagram profilimizi takip edin"><InstagramIcon size={20} /></a>
+              <a href="https://wa.me/905321561444" style={{ color: "white" }} aria-label="WhatsApp üzerinden bilgi alın"><MessageCircle size={20} /></a>
             </div>
           </div>
 
@@ -43,16 +43,16 @@ const Footer = () => {
             <h4 style={{ fontSize: "18px", color: "white", marginBottom: "30px" }}>İletişim</h4>
             <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
               <div style={{ display: "flex", gap: "15px", alignItems: "flex-start" }}>
-                <MapPin size={20} style={{ color: "var(--accent-rose)", flexShrink: 0 }} />
-                <p style={{ fontSize: "14px", color: "rgba(255, 255, 255, 0.7)" }}>
+                <MapPin size={20} style={{ color: "var(--accent-rose)", flexShrink: 0 }} aria-hidden="true" />
+                <p style={{ fontSize: "14px", color: "rgba(255, 255, 255, 0.85)" }}>
                   İnönü Mahallesi, İnönü Caddesi,<br /> 
                   Malatya Ofis Plaza, Kat: 4, No: 21,<br /> 
                   44100 Yeşilyurt/Malatya
                 </p>
               </div>
               <div style={{ display: "flex", gap: "15px", alignItems: "center" }}>
-                <Phone size={20} style={{ color: "var(--accent-rose)", flexShrink: 0 }} />
-                <a href="tel:05321561444" style={{ fontSize: "14px", color: "rgba(255, 255, 255, 0.7)" }}>0532 156 1444</a>
+                <Phone size={20} style={{ color: "var(--accent-rose)", flexShrink: 0 }} aria-hidden="true" />
+                <a href="tel:05321561444" style={{ fontSize: "14px", color: "rgba(255, 255, 255, 0.85)" }} aria-label="Telefon numaramız: 0532 156 1444">0532 156 1444</a>
               </div>
             </div>
           </div>
@@ -70,13 +70,14 @@ const Footer = () => {
                 style={{ border: 0 }} 
                 allowFullScreen={true} 
                 loading="lazy"
+                title="Clover Beauty Malatya Konumu"
               ></iframe>
             </div>
           </div>
         </div>
         
         <div style={{ marginTop: "60px", paddingTop: "40px", borderTop: "1px solid rgba(255, 255, 255, 0.1)", textAlign: "center" }}>
-          <p style={{ fontSize: "12px", color: "rgba(255, 255, 255, 0.5)" }}>
+          <p style={{ fontSize: "12px", color: "rgba(255, 255, 255, 0.75)" }}>
             © 2026 Clover Beauty Malatya. Tüm hakları saklıdır.
           </p>
         </div>

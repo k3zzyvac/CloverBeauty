@@ -1,12 +1,14 @@
+import dynamic from "next/dynamic";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
-import BeforeAfterSlider from "@/components/BeforeAfterSlider";
-import TechSection from "@/components/Technology";
-import Reviews from "@/components/Reviews";
-import Branches from "@/components/Branches";
-import Footer from "@/components/Footer";
-import StickyCTA from "@/components/StickyCTA";
+
+const BeforeAfterSlider = dynamic(() => import("@/components/BeforeAfterSlider"), { ssr: true });
+const TechSection = dynamic(() => import("@/components/Technology"), { ssr: true });
+const Reviews = dynamic(() => import("@/components/Reviews"), { ssr: true });
+const Branches = dynamic(() => import("@/components/Branches"), { ssr: true });
+const Footer = dynamic(() => import("@/components/Footer"), { ssr: true });
+const StickyCTA = dynamic(() => import("@/components/StickyCTA"), { ssr: false });
 
 export default function Home() {
   return (
