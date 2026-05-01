@@ -61,7 +61,7 @@ const Footer = () => {
             <h4 style={{ fontSize: "18px", color: "white", marginBottom: "30px" }}>Konum</h4>
             <div 
               className="premium-frame"
-              style={{ padding: "0", overflow: "hidden", aspectRatio: "16/9", border: "none" }}
+              style={{ padding: "0", overflow: "hidden", aspectRatio: "16/9", border: "none", backgroundColor: "rgba(0,0,0,0.1)" }}
             >
               <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3113.8824810759083!2d38.30752497645069!3d38.35165847184852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x407636e08dd10291%3A0xc39f886f7f2d575c!2sMalatya%20Ofis%20Plaza!5e0!3m2!1str!2str!4v1712945000000!5m2!1str!2str" 
@@ -70,7 +70,7 @@ const Footer = () => {
                 style={{ border: 0 }} 
                 allowFullScreen={true} 
                 loading="lazy"
-                title="Clover Beauty Malatya Konumu"
+                title="Clover Beauty Malatya Mağaza Konumu"
               ></iframe>
             </div>
           </div>
