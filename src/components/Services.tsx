@@ -57,12 +57,12 @@ const Services = () => {
               className="service-card premium-frame"
               style={{ padding: "0", border: "none", overflow: "hidden", display: "flex", flexDirection: "column" }}
             >
-              <div style={{ position: "relative", width: "100%", aspectRatio: "4/3" }}>
+              <div style={{ position: "relative", width: "100%", aspectRatio: "4/3", backgroundColor: "var(--bg-creamy)" }}>
                 <Image
                   src={service.image}
                   alt={service.title}
                   fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 300px"
                   style={{ objectFit: "cover" }}
                   placeholder="blur"
                   blurDataURL="data:image/webp;base64,UklGRlAAAABXRUJQVlA4WAoAAAAQAAAABwAABwAAQUxQSAIAAAAAAFZQOCAYAAAAMAEAnQEqCAAIAAAAbCQAALiS/v/6v3YAAAA="

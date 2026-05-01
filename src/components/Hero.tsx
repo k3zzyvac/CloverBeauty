@@ -120,16 +120,18 @@ const Hero = () => {
                 aspectRatio: "4/5",
                 overflow: "hidden",
                 borderRadius: "var(--radius-lg)",
-                boxShadow: "var(--shadow-premium)"
+                boxShadow: "var(--shadow-premium)",
+                backgroundColor: "var(--bg-creamy)" // Pre-load color to reduce CLS feel
               }}
             >
               <Image
                 src="/images/Mekan1.webp"
                 alt="Clover Beauty Malatya - Lüks Güzellik Merkezi"
                 fill
-                sizes="(max-width: 768px) 100vw, 50vw"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
                 style={{ objectFit: "cover" }}
                 priority
+                fetchPriority="high"
                 placeholder="blur"
                 blurDataURL="data:image/webp;base64,UklGRlAAAABXRUJQVlA4WAoAAAAQAAAABwAABwAAQUxQSAIAAAAAAFZQOCAYAAAAMAEAnQEqCAAIAAAAbCQAALiS/v/6v3YAAAA="
               />
@@ -141,7 +143,10 @@ const Hero = () => {
               style={{
                 position: "absolute",
                 zIndex: 2,
-                borderRadius: "var(--radius-md)"
+                borderRadius: "var(--radius-md)",
+                width: "180px",
+                height: "180px",
+                backgroundColor: "var(--bg-creamy)"
               }}
             >
               <Image
