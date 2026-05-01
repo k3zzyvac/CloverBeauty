@@ -8,7 +8,7 @@ const TechSection = dynamic(() => import("@/components/Technology"), { ssr: true
 const Reviews = dynamic(() => import("@/components/Reviews"), { ssr: true });
 const Branches = dynamic(() => import("@/components/Branches"), { ssr: true });
 const Footer = dynamic(() => import("@/components/Footer"), { ssr: true });
-const StickyCTA = dynamic(() => import("@/components/StickyCTA"), { ssr: false });
+const StickyCTA = dynamic(() => import("@/components/StickyCTA"), { ssr: true });
 
 export default function Home() {
   return (
