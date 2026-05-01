@@ -48,31 +48,9 @@ const TechSection = () => {
             </div>
           </div>
 
-          <div style={{ position: "relative" }} className="tech-image">
-            <div
-              style={{
-                width: "100%",
-                aspectRatio: "1/1",
-                backgroundColor: "var(--bg-creamy)",
-                borderRadius: "50%",
-                position: "absolute",
-                top: "50%",
-                left: "50%",
-                transform: "translate(-50%, -50%)",
-                zIndex: 0
-              }}
-            />
-            <div
-              className="premium-frame"
-              style={{
-                position: "relative",
-                zIndex: 1,
-                borderRadius: "var(--radius-lg)",
-                overflow: "hidden",
-                width: "100%",
-                aspectRatio: "1/1"
-              }}
-            >
+          <div className="tech-image-container">
+            <div className="tech-bg-circle" />
+            <div className="premium-frame">
               <Image
                 src="/images/Teknoloji.webp"
                 alt="Clover Beauty Malatya - Premium Teknoloji"
@@ -82,9 +60,9 @@ const TechSection = () => {
               />
             </div>
             {/* Trust Badges */}
-            <div style={{ position: "absolute", bottom: "40px", right: "-20px", background: "white", padding: "15px 25px", borderRadius: "50px", boxShadow: "var(--shadow-premium)", zIndex: 2, display: "flex", alignItems: "center", gap: "10px" }}>
-              <div style={{ width: "30px", height: "30px", backgroundColor: "#005a9c", borderRadius: "50%", color: "white", fontSize: "10px", fontWeight: "bold", display: "flex", alignItems: "center", justifyContent: "center" }}>FDA</div>
-              <span style={{ fontSize: "12px", fontWeight: "700", color: "var(--accent-bronze)" }}>ONAYLI TEKNOLOJİ</span>
+            <div className="trust-badge">
+              <div className="fda-badge">FDA</div>
+              <span className="badge-text">ONAYLI TEKNOLOJİ</span>
             </div>
           </div>
         </div>
@@ -92,9 +70,94 @@ const TechSection = () => {
 
       <style jsx>{`
         .icon-rose { color: var(--accent-rose); }
+        
+        .tech-image-container {
+          position: relative;
+          width: 100%;
+        }
+
+        .tech-bg-circle {
+          width: 100%;
+          aspect-ratio: 1/1;
+          background-color: var(--bg-creamy);
+          border-radius: 50%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          z-index: 0;
+        }
+
+        .premium-frame {
+          position: relative;
+          z-index: 1;
+          border-radius: var(--radius-lg);
+          overflow: hidden;
+          width: 100%;
+          aspect-ratio: 1/1;
+          box-shadow: var(--shadow-premium);
+        }
+
+        .trust-badge {
+          position: absolute;
+          bottom: 40px;
+          right: -20px;
+          background: white;
+          padding: 15px 25px;
+          border-radius: 50px;
+          box-shadow: var(--shadow-premium);
+          z-index: 2;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+        }
+
+        .fda-badge {
+          width: 30px;
+          height: 30px;
+          background-color: #005a9c;
+          border-radius: 50%;
+          color: white;
+          font-size: 10px;
+          font-weight: bold;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .badge-text {
+          font-size: 12px;
+          font-weight: 700;
+          color: var(--accent-bronze);
+        }
+
         @media (max-width: 992px) {
-          .tech-grid { grid-template-columns: 1fr !important; gap: 40px !important; }
-          .tech-image { max-width: 500px; margin: 0 auto; }
+          .tech-grid { 
+            grid-template-columns: 1fr !important; 
+            gap: 60px !important; 
+          }
+          .tech-image-container { 
+            max-width: 550px; 
+            margin: 0 auto;
+          }
+          section { padding: 60px 0 !important; }
+        }
+
+        @media (max-width: 576px) {
+          .tech-image-container {
+            max-width: 100%;
+          }
+          .premium-frame {
+            aspect-ratio: 4/5;
+          }
+          .trust-badge {
+            bottom: 20px;
+            right: 0;
+            padding: 10px 15px;
+          }
+          .badge-text {
+            font-size: 10px;
+          }
         }
       `}</style>
     </section>
